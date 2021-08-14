@@ -13,6 +13,16 @@
 		B350C01726C7CB470044E1BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B350C01526C7CB470044E1BE /* Main.storyboard */; };
 		B350C01926C7CB490044E1BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B350C01826C7CB490044E1BE /* Assets.xcassets */; };
 		B350C01C26C7CB490044E1BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B350C01A26C7CB490044E1BE /* LaunchScreen.storyboard */; };
+		B350C02F26C7CDE10044E1BE /* LogoGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = B350C02E26C7CDE10044E1BE /* LogoGame.swift */; };
+		B350C03326C7CF580044E1BE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B350C03226C7CF580044E1BE /* NetworkManager.swift */; };
+		B350C03626C7CFA00044E1BE /* APIComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B350C03526C7CFA00044E1BE /* APIComponents.swift */; };
+		B350C04526C7D2760044E1BE /* logo.json in Resources */ = {isa = PBXBuildFile; fileRef = B350C04426C7D2760044E1BE /* logo.json */; };
+		B350C04826C7D31D0044E1BE /* LevelDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B350C04726C7D31D0044E1BE /* LevelDetails.swift */; };
+		B350C04B26C7D3770044E1BE /* LogoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B350C04A26C7D3770044E1BE /* LogoData.swift */; };
+		B350C04E26C7D57E0044E1BE /* ImageModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B350C04D26C7D57E0044E1BE /* ImageModule.swift */; };
+		B350C05226C7D6510044E1BE /* ImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B350C05126C7D6510044E1BE /* ImageView+Extension.swift */; };
+		B350C05826C7DBC20044E1BE /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B350C05726C7DBC20044E1BE /* ViewModel.swift */; };
+		B350C06426C7E2AC0044E1BE /* LogoNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B350C06326C7E2AC0044E1BE /* LogoNetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		B350C01826C7CB490044E1BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B350C01B26C7CB490044E1BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B350C01D26C7CB490044E1BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B350C02E26C7CDE10044E1BE /* LogoGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoGame.swift; sourceTree = "<group>"; };
+		B350C03226C7CF580044E1BE /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B350C03526C7CFA00044E1BE /* APIComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIComponents.swift; sourceTree = "<group>"; };
+		B350C04426C7D2760044E1BE /* logo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = logo.json; sourceTree = "<group>"; };
+		B350C04726C7D31D0044E1BE /* LevelDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelDetails.swift; sourceTree = "<group>"; };
+		B350C04A26C7D3770044E1BE /* LogoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoData.swift; sourceTree = "<group>"; };
+		B350C04D26C7D57E0044E1BE /* ImageModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModule.swift; sourceTree = "<group>"; };
+		B350C05126C7D6510044E1BE /* ImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView+Extension.swift"; sourceTree = "<group>"; };
+		B350C05726C7DBC20044E1BE /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		B350C06326C7E2AC0044E1BE /* LogoNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoNetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,11 @@
 		B350C00E26C7CB470044E1BE /* Logo */ = {
 			isa = PBXGroup;
 			children = (
+				B350C05B26C7DBCC0044E1BE /* ViewModels */,
+				B350C05626C7D6B00044E1BE /* Utils */,
+				B350C02D26C7CDC70044E1BE /* BuisnessLogic */,
+				B350C02526C7CB960044E1BE /* NetworkManager */,
+				B350C02426C7CB890044E1BE /* Models */,
 				B350C00F26C7CB470044E1BE /* AppDelegate.swift */,
 				B350C01126C7CB470044E1BE /* SceneDelegate.swift */,
 				B350C01326C7CB470044E1BE /* ViewController.swift */,
@@ -63,8 +88,77 @@
 				B350C01826C7CB490044E1BE /* Assets.xcassets */,
 				B350C01A26C7CB490044E1BE /* LaunchScreen.storyboard */,
 				B350C01D26C7CB490044E1BE /* Info.plist */,
+				B350C02B26C7CBC00044E1BE /* DBManager */,
+				B350C03B26C7D02E0044E1BE /* MockData */,
+				B350C05026C7D5840044E1BE /* ImageModule */,
 			);
 			path = Logo;
+			sourceTree = "<group>";
+		};
+		B350C02426C7CB890044E1BE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B350C04726C7D31D0044E1BE /* LevelDetails.swift */,
+				B350C04A26C7D3770044E1BE /* LogoData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B350C02526C7CB960044E1BE /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				B350C03226C7CF580044E1BE /* NetworkManager.swift */,
+				B350C03526C7CFA00044E1BE /* APIComponents.swift */,
+				B350C06326C7E2AC0044E1BE /* LogoNetworkService.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		B350C02B26C7CBC00044E1BE /* DBManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DBManager;
+			sourceTree = "<group>";
+		};
+		B350C02D26C7CDC70044E1BE /* BuisnessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				B350C02E26C7CDE10044E1BE /* LogoGame.swift */,
+			);
+			path = BuisnessLogic;
+			sourceTree = "<group>";
+		};
+		B350C03B26C7D02E0044E1BE /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				B350C04426C7D2760044E1BE /* logo.json */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
+		B350C05026C7D5840044E1BE /* ImageModule */ = {
+			isa = PBXGroup;
+			children = (
+				B350C04D26C7D57E0044E1BE /* ImageModule.swift */,
+			);
+			path = ImageModule;
+			sourceTree = "<group>";
+		};
+		B350C05626C7D6B00044E1BE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B350C05126C7D6510044E1BE /* ImageView+Extension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B350C05B26C7DBCC0044E1BE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B350C05726C7DBC20044E1BE /* ViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +220,7 @@
 			files = (
 				B350C01C26C7CB490044E1BE /* LaunchScreen.storyboard in Resources */,
 				B350C01926C7CB490044E1BE /* Assets.xcassets in Resources */,
+				B350C04526C7D2760044E1BE /* logo.json in Resources */,
 				B350C01726C7CB470044E1BE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,9 +232,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B350C02F26C7CDE10044E1BE /* LogoGame.swift in Sources */,
+				B350C05226C7D6510044E1BE /* ImageView+Extension.swift in Sources */,
 				B350C01426C7CB470044E1BE /* ViewController.swift in Sources */,
+				B350C05826C7DBC20044E1BE /* ViewModel.swift in Sources */,
+				B350C03626C7CFA00044E1BE /* APIComponents.swift in Sources */,
+				B350C03326C7CF580044E1BE /* NetworkManager.swift in Sources */,
+				B350C04B26C7D3770044E1BE /* LogoData.swift in Sources */,
+				B350C04E26C7D57E0044E1BE /* ImageModule.swift in Sources */,
 				B350C01026C7CB470044E1BE /* AppDelegate.swift in Sources */,
+				B350C04826C7D31D0044E1BE /* LevelDetails.swift in Sources */,
 				B350C01226C7CB470044E1BE /* SceneDelegate.swift in Sources */,
+				B350C06426C7E2AC0044E1BE /* LogoNetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

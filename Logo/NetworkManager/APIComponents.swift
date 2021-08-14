@@ -6,3 +6,18 @@
 //
 
 import Foundation
+
+enum APIComponent {
+    case logo
+}
+
+extension APIComponent {
+    
+    var jsonFile: String {
+        switch self {
+        case .logo:
+            return "logo"
+        }
+    }
+ 
+}

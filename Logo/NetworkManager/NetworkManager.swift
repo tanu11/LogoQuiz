@@ -7,7 +7,8 @@
 
 import Foundation
 
-class LogoNetworkManager {
+
+class NetworkManager {
     let session = URLSession.shared
 
     func request<T: Codable>(path: APIComponent, onSuccess: @escaping (T)->Void, onFailure: @escaping (Error) ->Void ) {
